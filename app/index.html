@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="" ng-app="store">
+<html class="no-js" lang="" ng-app>
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -10,7 +10,6 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-route/angular-route.js"></script>
@@ -43,22 +42,33 @@
 			</div>
 		</div>
 		<div class="headerBar2">
-			<nav>
-				<a href="#">Home</a>
-				<a href="#">Products</a>
-				<a href="#">About</a>
-				<a href="#">Pages</a>
-				<a href="#">Blog</a>
-				<a href="#">Contact</a>
-				<a href="#">Contact</a>
-				<a href="#">Contact</a>
+			<nav class="navbar">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
 	<section id="banner">
 		<img src="images/header.png">
 	</section>
-	<section id="tabs" ng-controller='StoreTabs'>
+	<section id="tabs" ng-controller='StoreController as store'>
 		<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
 			<li class="active" data-toggle="tab"><a href="#">Pink Shoes<br><span class="tabsUndertext">Now at $145,99</span></a></li>
 			<li><a href="#" data-toggle="tab">Anna Field<br><span class="tabsUndertext">Limited Edition</span></a></li>

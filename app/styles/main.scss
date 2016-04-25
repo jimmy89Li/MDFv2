@@ -142,6 +142,16 @@ nav {
 
   }
 }
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-toggle {
+  .icon-bar {
+    background-color: #fff;
+  }
+  background-color: #d1d5d8;
+  float: left;
+}
 
 /* Banner section */
 #banner {
